@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+   <SurfaceView
+        android:id="@+id/smallcameraview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" />
+ <!--   
+   <ImageView
+        android:background="@drawable/background"
+        android:id="@+id/background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center" />
+    -->
+    <RelativeLayout
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent">
+    <!--    
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+               android:id="@+id/adcontainer"
+              android:orientation="vertical"
+              android:layout_alignParentBottom="true"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content">
+        
+	        <com.google.ads.AdView android:id="@+id/adView"
+	                         android:layout_width="wrap_content"
+	                         android:layout_height="wrap_content"
+	                         ads:adUnitId="a1503ac1fd4e2ac"
+	                         ads:adSize="BANNER"
+	                         ads:testDevices="TEST_EMULATOR, 0019d431063b5e, BX9033M47E"
+	                         ads:loadAdOnCreate="true"/>
+        
+        </LinearLayout>
+       --> 
+        <LinearLayout
+            android:id="@+id/bar"
+    		android:layout_width="fill_parent"
+		  	android:layout_height="50dp"
+		  	
+	    	android:layout_marginBottom="20dp"
+	      	android:layout_marginLeft="20dp"
+	      	android:layout_marginRight="20dp"
+	      	android:orientation="horizontal">
+        
+			<ImageView
+			    android:layout_margin="10dp"
+		        android:id="@+id/led"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="center_vertical"
+		        android:src="@drawable/led_green" />
+            
+			<TextView 
+			    android:paddingLeft="0dp"
+			    android:paddingTop="12dp"
+			    android:paddingBottom="7dp"
+			    android:paddingRight="0dp"
+			    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	    		android:id="@+id/status"
+		    	android:textColor="#FFFFFF"
+		    	android:textSize="17dp"
+		    	android:textStyle="bold" />
+        
+		</LinearLayout>
+
+    </RelativeLayout>
+    
+    <ImageView
+	     android:id="@+id/logo"
+	     android:src="@drawable/icon"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:visibility="invisible" />
+    
+</FrameLayout>
